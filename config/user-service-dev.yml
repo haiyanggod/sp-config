@@ -7,7 +7,10 @@ spring:
     name: user-service
   cloud:
     config:
-      override-none: true
+      override-none: true  
+  zipkin:  
+    sender:
+      type: rabbit
     
 server:
   port: 8101
